@@ -1,0 +1,501 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'kioficina';
+    src: url('../fonts/pace-racing-car/PACE-Italic.woff2') format('woff2'),
+        url('../fonts/pace-racing-car/PACE-Italic.woff') format('woff'),
+        url('../fonts/pace-racing-car/PACE-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Definindo a fonte padrão */
+body {
+    font-family: 'kioficina', Arial, sans-serif;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    overflow: scroll;
+
+    .container {
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.logo {
+    width: 60%;
+    max-width: 400px;
+    margin-bottom: 50px;
+}
+
+/* Estilo para os cabeçalhos */
+h2 {
+    text-align: center;
+    margin: auto 20px;
+    color: #FFFF00;
+    font-size: 30px;
+    width: 90%;
+}
+
+/* Botão de envio */
+button,
+.btn {
+    width: 100%;
+    transition: 0.3s;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    background-color: #FFC107;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'kioficina', Arial, sans-serif;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #D48201;
+}
+
+/* INDEX */
+#index {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            font-size: 25px;
+        }
+        h3{
+            color: white;
+            font-size: 15px;
+        }
+        .btn{
+            width: 60%;
+        }
+    }
+
+    /* Mensagem de erro */
+    p {
+        text-align: center;
+        color: red;
+        font-size: 14px;
+    }
+}
+
+/* LOGIN */
+#login {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        /* Contêiner do formulário */
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            margin: 0 auto;
+
+            input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+
+                :focus {
+                    border-color: #D48201;
+                    outline: none;
+                }
+            }
+        }
+        h3{
+            color: white;
+        }
+        .btn{
+            width: 60%;
+        }
+    }
+
+    /* Mensagem de erro */
+    p {
+        text-align: center;
+        color: red;
+        font-size: 14px;
+    }
+}
+
+/********* MENU *********/
+#menu {
+    p {
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .menu-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+        width: 80%;
+        height: 250px;
+    }
+
+    .menu-buttons .btn {
+        width: 100%;
+    }
+
+    .logout {
+        background: #dc3545;
+    }
+
+    .logout:hover {
+        background: #a71d2a;
+    }
+}
+
+/********* LISTAR_SERVICO *********/
+#listar-servico {
+    .container {
+        width: 90%;
+        max-width: 400px;
+        padding: 20px;
+        background: #383838;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            font-size: 25px;
+        }
+
+        .card {
+            background: #4B4B4B;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            font-family: Arial, Helvetica, sans-serif;
+
+            p {
+                margin: 5px 0;
+                font-size: 14px;
+                color: #fff;
+
+                strong {
+                    font-size: 18px;
+                }
+            }
+
+            .status-analise {
+                color: #dc3545;
+                font-weight: bold;
+                font-family: 'kioficina', Arial, sans-serif;
+            }
+
+            .status-andamento {
+                color: #ffc107;
+                font-weight: bold;
+                font-family: 'kioficina', Arial, sans-serif;
+            }
+
+            .status-concluido {
+                color: #28a745;
+                font-weight: bold;
+                font-family: 'kioficina', Arial, sans-serif;
+            }
+        }
+
+        .btn {
+            margin-top: 20px;
+            width: 60%;
+        }
+    }
+}
+
+/* DEPOIMENTOS */
+#depoimento {
+    .container {
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            font-size: 25px;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+
+            textarea {
+                width: 90%;
+                padding: 10px;
+                margin: 10px 0;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                resize: none;
+                font-size: 16px;
+            }
+
+            .stars {
+                display: flex;
+                flex-direction: row-reverse;
+                /* Inverte a direção */
+                justify-content: center;
+
+                input {
+                    display: none;
+                }
+
+                label {
+                    font-size: 50px !important;
+                    color: gray !important;
+                    cursor: pointer;
+                    margin-top: -20px;
+                }
+
+                input:checked~label,
+                label:hover,
+                label:hover~label {
+                    color: gold !important;
+                }
+            }
+        }
+
+        .btn {
+            width: 60%;
+            margin-top: 20px;
+        }
+    }
+}
+
+/* ***** PERFIL ****** */
+#perfil {
+    .container {
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .perfil-imagem {
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+
+            form {
+                background: transparent;
+                box-shadow: none;
+                margin-top: -60px;
+                margin-left: 50px;
+                padding: 0;
+                margin-bottom: 0 !important;
+
+                .btn-upload {
+                    color: #FFFF00;
+                    font-weight: bold;
+                    border-radius: 50%;
+                    font-size: 50px;
+                }
+
+                input[type="file"] {
+                    display: none;
+                }
+            }
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            margin: 0 auto;
+
+            .local {
+                display: flex;
+                justify-content: space-between;
+
+                div:nth-child(1) {
+                    width: 60%;
+                }
+
+                div:nth-child(2) {
+                    width: 35%;
+                }
+            }
+
+            input,
+            select {
+                width: 100%;
+                padding: 7px;
+                margin-bottom: 2px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 14px;
+            }
+
+            .lbl-senha {
+                font-size: 14px;
+            }
+        }
+
+        .btn {
+            width: 60%;
+            margin-top: 20px;
+        }
+    }
+}
+
+/* ***** AGENDAMENTO ****** */
+#agendamento {
+    .container {
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            margin: 0 auto;
+
+            input,
+            select {
+                width: 100%;
+                padding: 7px;
+                margin-bottom: 2px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 14px;
+            }
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    }
+
+    .btn {
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    .lista-agenda {
+        background: #28a745;
+    }
+
+    .lista-agenda:hover {
+        background: #08a705;
+    }
+}
+
+/********* LISTAR_AGENDA *********/
+
+#listar-agenda {
+    .container {
+        width: 90%;
+        max-width: 400px;
+        padding: 20px;
+        background: #383838;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2 {
+            font-size: 25px;
+        }
+
+        .card {
+            background: #4B4B4B;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            font-family: Arial, Helvetica, sans-serif;
+
+            p {
+                margin: 5px 0;
+                font-size: 14px;
+                color: #fff;
+
+                strong {
+                    font-size: 18px;
+                }
+            }
+
+            .status-analise {
+                color: #2a95d3;
+                font-weight: bold;
+                font-family: 'kioficina', Arial, sans-serif;
+            }
+
+            .status-agendado {
+                color: #ffc107;
+                font-weight: bold;
+                font-family: 'kioficina', Arial, sans-serif;
+            }
+
+            .status-concluido {
+                color: #28a745;
+                font-weight: bold;
+                font-family: 'kioficina', Arial, sans-serif;
+            }
+
+            .status-cancelado {
+                color: #dc3545;
+                font-weight: bold;
+                font-family: 'kioficina', Arial, sans-serif;
+            }
+        }
+
+        .btn {
+            width: 60%;
+            margin: 10px auto;
+        }
+    }
+}
