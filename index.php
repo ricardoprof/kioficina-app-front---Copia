@@ -2,7 +2,7 @@
 
 // Carregue as configurações iniciais da aplicação
 require_once('config/config.php');
-$titulo = 'Login - Ki-Oficina';
+$titulo = 'Login - App Ki-Oficina';
 ?>
 
 <!DOCTYPE html>
