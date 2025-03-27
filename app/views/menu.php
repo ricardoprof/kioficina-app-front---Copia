@@ -3,7 +3,7 @@
 
 // Carregue as configurações iniciais da aplicação
 require_once('../../config/config.php'); 
-$titulo = 'Menu Principal - Ki-Oficina'
+$titulo = 'Menu Principal - App Ki-Oficina'
 ?>
 
 <!DOCTYPE html>
